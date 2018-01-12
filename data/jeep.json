@@ -1,0 +1,19 @@
+[{
+	"name": "Indian Offroad",
+	"rank": "3",
+	"color": "#8e968f",
+	"available": true,
+	"thumb": "content/img/jeep1.jpg"
+}, {
+	"name": "CJ5",
+	"rank": "1",
+	"color": "#041605",
+	"available": true,
+	"thumb": "content/img/jeep2.jpg"
+}, {
+	"name": "Custom Jeep",
+	"rank": "2",
+	"color": "Black",
+	"available": true,
+	"thumb": "content/img/jeep3.jpg"
+}]

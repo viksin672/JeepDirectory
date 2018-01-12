@@ -1,0 +1,27 @@
+<div class="content">
+
+  <center>
+
+  </center> <button ng-click="order= 'name'">Order by name</button>
+   <button ng-click="order= 'color'">Order by color</button>
+   <button ng-click="order= 'rank'">Order by rank</button> </center>
+<br />
+  &nbsp; <input type="text" ng-model="search" placeholder="Search any Jeep Character" />
+   <ul id="jeep-list">
+     <li ng-repeat="name in names | orderBy: order | filter: search"  ng-show="name.available">
+     <img ng-src="{{name.thumb}}" style="margin:-12px 10px 0 0; float left; width:50px;" />
+      <h3> {{name.name}} -  #{{name.rank}}</h3>
+      <div class="remove" ng-click="removeJeep(name)">x</div>
+      <span class="belt" style="background:{{name.color}}">Body Tone</span>
+     </li>
+   </ul>
+   <h1> Add Jeep</h1>
+   <form ng-submit="addjeep()">
+     <input type="text" placeholder="Name" ng-model="newjeep.name"/>
+     <input type="text" placeholder="Rank" ng-model="newjeep.rank"/>
+     <input type="text" placeholder="Color" ng-model="newjeep.color"/>
+     <input  type="submit" value="Add new jeep"  />
+    </form>
+    <a href="" ng-click="removeAll()">Remove All Jeeps</a>
+
+</div>
